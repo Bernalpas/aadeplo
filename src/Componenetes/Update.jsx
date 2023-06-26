@@ -7,7 +7,7 @@ const Update = () =>{
 
     const navigate = useNavigate();
 
-    const DATOS = import.meta.env.VITE_DATOS;
+    const DATOS = 'https://aanerns-production.up.railway.app/clientes';
 
     console.log(DATOS);
 
@@ -26,10 +26,10 @@ const Update = () =>{
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    const updateApiData = () => {
+    const updateApiData = async () => {
         console.log(`${DATOS}/${id}`);
         
-        axios.put(`${DATOS}/${id}`, {
+        await axios.put(`${DATOS}/${id}`, {
             nombre,
             apellido,
             email,

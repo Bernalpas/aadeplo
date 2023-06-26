@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const Formulario = () =>{
 
-    const URL = import.meta.env.VITE_URL;
+    const URL = 'https://aanerns-production.up.railway.app/usuarios';
 
     console.log(URL);
 

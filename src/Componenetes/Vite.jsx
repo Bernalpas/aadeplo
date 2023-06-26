@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Vite = () =>{
 
-    const DATOS = import.meta.env.VITE_DATOS
+    const DATOS = 'https://aanerns-production.up.railway.app/clientes';
 
     console.log(DATOS);
 
